@@ -13,7 +13,7 @@ spec:
       releaseName: crossplane
       parameters:
         - name: replicas
-          value: 2
+          value: "2"
   destination:
     server: "https://10.0.0.115:6443"
     namespace: crossplane-system
