@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: crossplane
-  namespace: crossplane-system
+  name: argocd
+  namespace: crossplane
 spec:
   project: default
   source:
