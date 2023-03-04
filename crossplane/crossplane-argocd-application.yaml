@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: crossplane
+  namespace: crossplane-system
+spec:
+  project: default
+  source:
+    chart: crossplane
+    repoURL: crossplane-stable https://charts.crossplane.io/stable
+    targetRevision: 1.11.1
+    helm:
+      releaseName: crossplane
+  destination:
+    server: "https://10.0.0.115:6443"
+    namespace: crossplane-system
