@@ -13,7 +13,7 @@ spec:
       releaseName: crossplane
       parameters:
         - name: replicas
-          value: "3"
+          value: "1"
       # values: |
       # replicas: "3"
   destination:
