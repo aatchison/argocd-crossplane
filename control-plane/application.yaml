@@ -11,11 +11,11 @@ spec:
     targetRevision: 1.11.1
     helm:
       releaseName: crossplane
-      # parameters:
-      #   - name: replicas
-      #     value: "2"
-      values: |
-      replicas: 3
+      parameters:
+        - name: replicas
+          value: "3"
+      # values: |
+      # replicas: "3"
   destination:
     server: "https://10.0.0.115:6443"
     namespace: crossplane-system
