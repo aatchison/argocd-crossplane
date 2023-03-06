@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: vend-helm
+  name: control-plane
   namespace: argocd
 spec:
   clusterResourceWhitelist:
@@ -10,11 +10,11 @@ spec:
   description: This is just an example.
   destinations:
     - name: in-cluster
-      namespace: vend
-      server: 'https://kubernetes.default.svc'
+      namespace: control-plane
+      server: 'https://10.0.0.115:6443'
   namespaceResourceWhitelist:
     - group: '*'
       kind: '*'
   sourceRepos:
-    - 'https://github.com/thomassuedbroecker/vend-helm'
+    - 'https://github.com/aatchison/argocd-crossplane'
 status: {}
