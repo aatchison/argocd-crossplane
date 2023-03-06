@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: upbound-provider-aws
+  namespace: argocd
 spec:
   project: crossplane
   source:
