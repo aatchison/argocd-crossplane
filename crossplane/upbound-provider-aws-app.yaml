@@ -3,11 +3,11 @@ kind: Application
 metadata:
   name: upbound-provider-aws
 spec:
-  destination:
-    namespace: crossplane-system
-    server: "https://10.0.0.115:6443"
   project: crossplane
   source:
+    repoURL: 'git@github.com:aatchison/argocd-crossplane.git'
     path: crossplane/providers/upbound
-    repoURL: 'https://github.com/aatchison/argocd-crossplane'
     targetRevision: HEAD
+  destination:
+    server: 'https://10.0.0.115:6443'
+    namespace: crossplane-system
