@@ -15,7 +15,7 @@ spec:
       #   - name: replicas
       #     value: "1"
       values: |
-      replicas: "3"
+        replicas: 3
     syncPolicy:
     automated:
       prune: true
