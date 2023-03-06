@@ -11,3 +11,6 @@ spec:
   destination:
     server: 'https://10.0.0.115:6443'
     namespace: crossplane-system
+  syncPolicy:
+    automated: 
+       prune: true

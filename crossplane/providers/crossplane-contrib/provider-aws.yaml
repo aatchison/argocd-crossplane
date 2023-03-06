@@ -6,3 +6,6 @@ metadata:
   namespace: crossplane-system
 spec:
   package: xpkg.upbound.io/crossplane-contrib/provider-aws:v0.37.1
+  packagePullPolicy: IfNotPresent
+  revisionActivationPolicy: Automatic
+  revisionHistoryLimit: 1
