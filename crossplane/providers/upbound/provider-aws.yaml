@@ -2,7 +2,7 @@ apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
   name: provider-aws
-  namespace: upbound-system
+  namespace: crossplane-system
 spec:
   package: xpkg.upbound.io/upbound/provider-aws:v0.30.0
   packagePullPolicy: IfNotPresent
