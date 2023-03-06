@@ -6,7 +6,7 @@ spec:
   destination:
     namespace: crossplane-system
     server: "https://10.0.0.115:6443"
-  project: control-plane
+  project: crossplane
   source:
     path: control-plane/crossplane-providers/upbound
     repoURL: 'https://github.com/aatchison/argocd-crossplane'
