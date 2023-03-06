@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: upbound-provider-aws
+spec:
+  destination:
+    namespace: crossplane-system
+    server: "https://10.0.0.115:6443"
+  project: control-plane
+  source:
+    path: control-plane/crossplane-providers/upbound
+    repoURL: 'https://github.com/aatchison/argocd-crossplane'
+    targetRevision: HEAD
