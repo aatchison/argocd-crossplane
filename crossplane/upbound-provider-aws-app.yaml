@@ -8,6 +8,6 @@ spec:
     server: "https://10.0.0.115:6443"
   project: crossplane
   source:
-    path: control-plane/crossplane/providers/upbound
+    path: crossplane/providers/upbound
     repoURL: 'https://github.com/aatchison/argocd-crossplane'
     targetRevision: HEAD
