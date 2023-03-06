@@ -1,12 +1,12 @@
-# apiVersion: aws.crossplane.io/v1beta1
-# kind: ProviderConfig
-# metadata:
-#   name: contrib-default
-#   namespace: crossplane-system
-# spec:
-#   credentials:
-#     source: Secret
-#     secretRef:
-#       namespace: crossplane-system
-#       name: aws-secret
-#       key: default
+apiVersion: aws.crossplane.io/v1beta1
+kind: ProviderConfig
+metadata:
+  name: contrib-default
+  namespace: crossplane-system
+spec:
+  credentials:
+    source: Secret
+    secretRef:
+      namespace: crossplane-system
+      name: aws-secret
+      key: credentials
