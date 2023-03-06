@@ -9,8 +9,8 @@ spec:
       kind: '*'
   description: This is just an example.
   destinations:
-    - name: in-cluster
-      namespace: control-plane
+    - name: crossplane
+      namespace: crossplane-system
       server: 'https://10.0.0.115:6443'
   namespaceResourceWhitelist:
     - group: '*'
