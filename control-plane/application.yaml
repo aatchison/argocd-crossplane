@@ -16,14 +16,10 @@ spec:
           value: "1"
       # values: |
       # replicas: "3"
-    syncPolicy:
-    automated:
-      prune: true
-      allowEmpty: true
   destination:
     server: "https://10.0.0.115:6443"
     namespace: crossplane-system
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     allowEmpty: true
+  syncPolicy:
+    automated:
+      prune: true
+      allowEmpty: true
