@@ -17,4 +17,5 @@ spec:
       kind: '*'
   sourceRepos:
     - 'https://github.com/aatchison/argocd-crossplane'
+    - 'https://charts.crossplane.io/stable'
 status: {}
